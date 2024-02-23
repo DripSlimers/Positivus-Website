@@ -19,6 +19,11 @@
 		--reviewsSliderSlideWidth: 606px;
 
 		&-list{ 
+			
+			&::-webkit-scrollbar {
+				width: 0;
+			}
+
 			display: flex;
 			column-gap: 60px;
 			scroll-snap-type: x mandatory;
