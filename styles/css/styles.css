@@ -1421,13 +1421,15 @@ h4, .h4 {
     background-color: var(--color-gray);
   }
 }
-.contact-us__request-types {
-  padding: 40px 52px 36px;
-  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+@media (max-width: 767px) {
+  .contact-us__request-types {
+    padding: 40px 52px 36px;
+    border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+  }
 }
 @media (min-width: 1024px) {
   .contact-us__form {
-    min-width: 545px;
+    max-width: 556px;
   }
 }
 @media (min-width: 768px) {

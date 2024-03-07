@@ -21,12 +21,10 @@
 		background: url(../../images/contact-us/contact-us-bg.svg)
 		center/contain no-repeat;
 
-		
 		@include tablet {
 			display: none;
 		}
 	}
-
 
 	&__form,
 	&__body {
@@ -42,13 +40,15 @@
 	}
 
 	&__request-types {
-		padding: 40px 52px 36px;
-		border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+		@include mobile {
+			padding: 40px 52px 36px;
+			border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+		}
 	}
 
 	&__form {
 		@include tablet-above {
-			min-width: 545px;
+			max-width: 556px;
 		}
 
 		@include mobile-above {
